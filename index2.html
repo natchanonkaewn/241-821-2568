@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container .item {
+            background-color: lightblue;
+        }
+        .button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button.active {
+            background-color: red;
+        }
+        .button.warning {
+            background-color: rgb(233, 213, 30);
+        }
+        .item1 + .item2 {
+            background-color: lightblue;
+        }
+        input[type="text"] {
+            border: 2px solid green;
+            margin-bottom: 10px;
+        }
+        .buttonhehe {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            }
+        .buttonhehe:hover {
+            background-color: green;
+        }
+        .buttonhehe:active {
+            background-color: red;
+        }
+        .buttonhehe:focus {
+            background-color: yellow;
+        }
+        input:focus {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <div class="container">
+        Container Content
+        <div class="item">
+            Item Content
+        </div>
+    </div>
+    <div class="footer-container">
+        Container Content
+        <div class="item">
+            Item Content
+        </div>
+    </div>
+    <button class="button">Click Me</button>
+    <button class="button active">Delete</button>
+    <button class="button warning">Warning</button>
+
+    <div class="item1">Item 1</div>
+    <div class="item2">Item 2</div>
+
+    <input type="text" name="sample-input">
+    <input type="text" name="another-input">
+    <input type="text" name="number-input">
+    <button class="buttonhehe">Click Me!</button>
+</body>
+</html>
