@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- hehe-->
+    <style>
+         /* 1.แต่งใคร? (id,class,DOM) 2.แต่งอะไร? */
+         @font-face {
+            font-family: 'Kanit';
+            src: url(./Kanit/Kanit-Regular.ttf);
+         }
+        body {
+        background-color: rgb(52, 102, 177);
+        font-family: 'Kanit', sans-serif;
+        }
+        #register-form {
+        color: white;
+        padding-left: 20px;
+        border: 1px solid white;
+        margin-left: 20px;
+        padding-right: 20px;
+        margin-right: 20px;
+        border: 1px solid black;
+        text-align: center;
+        }
+        .form-control {
+        border: 2px solid black;
+        margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- pewpew-->
+     <div id="register-form">Register Form</div>
+    ชื่อ <input class=form-control" type ="text" name="name">
+    นามสกุล : <input class=form-control" type ="text" name="surname"><br>
+    อายุ : <input type ="text" name="age" min="0" max="150"><br>
+    เพศ :
+    <input type ="radio" name="gender" value="male"> ชาย
+    <input type ="radio"  name="gender" value="female"> หญิง <br>
+    งานอดิเรก :
+    <input type ="checkbox" name="hobby" value="reading"> อ่านหนังสือ<br>
+    <input type ="checkbox" name="hobby" value="traveling"> ท่องเที่ยว<br>
+    <input type ="checkbox" name="hobby" value="sports"> กีฬา<br>
+    คำอธิบายตัวเอง : <br>
+    <textarea name="description" row="4" cols="50"></textarea><br>
+    <input type="submit" value="Submit">     
+</body>
+</html>
