@@ -1,0 +1,119 @@
+/* ตั้งค่าพื้นฐานและฟอนต์ */
+body {
+    font-family: 'Sarabun', sans-serif; /* แนะนำให้ใช้ฟอนต์ที่อ่านไทยง่าย */
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* กล่อง Form หลัก (Card) */
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 500px; /* จำกัดความกว้างไม่ให้ยืดเกินไป */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* หัวข้อแบบฟอร์ม */
+.header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* จัด Layout แถวแนวนอน */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* ระยะห่างแต่ละ input group */
+.form-input {
+    margin-bottom: 15px;
+}
+
+/* Label ด้านหน้า (ชื่อ, นามสกุล...) */
+.header-form {
+    width: 80px; /* กำหนดความกว้างคงที่เพื่อให้ input ตรงกัน */
+    font-weight: 600;
+    color: #555;
+    flex-shrink: 0; /* ไม่ให้หดตัว */
+}
+
+/* ช่องกรอกข้อมูล (Text box) */
+.form {
+    flex: 1; /* ขยายให้เต็มพื้นที่ที่เหลือ */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form:focus {
+    border-color: #007bff; /* เปลี่ยนสีเส้นขอบเมื่อกด */
+}
+
+/* ส่วนของเพศ (Radio buttons) */
+.gender .flex div {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+.gender input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Checkbox (งานอดิเรก) */
+.form-input div {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Textarea (คำอธิบาย) */
+textarea {
+    width: 100%;
+    height: 80px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* ให้ padding ไม่ดันขนาดกล่อง */
+    resize: vertical;
+}
+
+/* จัดกึ่งกลางปุ่ม */
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* ปุ่มกด */
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
