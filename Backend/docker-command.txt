@@ -1,0 +1,41 @@
+docker run hello-world
+
+//เช็คว่ามีcontainerไหนบ้าง
+docker ps --all
+
+//list รายการ folder ที่อยู่ใน container
+docker run busybox ls
+
+docker run busybox echo 'hello world in docker'
+
+//
+docker run busybox ping google.com
+
+//
+docker stop container_id
+
+//
+docker pull,create,start container
+
+//ลบ container
+docker rm container_id
+
+//ลบ containerทุกอันที่ stop อยู่
+docker system prune
+
+//
+docker run nginx
+
+//เข้ามาในเครื่อง
+docker exec -it container_id sh
+docker exec -it container_id bash
+docker exec container_id ls
+
+//
+cat file_name
+
+//
+docker run -p 80:80 nginx
+docker run -p 9000:80 nginx
+docker run -d -p 9001:80 nginx
+
