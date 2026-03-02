@@ -1,3 +1,20 @@
+.message {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.message.success {
+    background-color: green;
+    color: white;
+}
+
+.message.danger {
+    background-color: red;
+    color: wheat;
+}
+
 /* ตั้งค่าพื้นฐานและฟอนต์ */
 body {
     font-family: 'Sarabun', sans-serif; /* แนะนำให้ใช้ฟอนต์ที่อ่านไทยง่าย */
